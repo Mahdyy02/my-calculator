@@ -13,11 +13,13 @@ h1{
     border: 3px solid rgba(0, 0, 0, 0.5);
     padding: 5px;
     margin: 10px auto;
+    border-radius: 5px;
+    background-color: rgba(75, 77, 80, 0.792);
     
 }
 
 .display-screen{
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(28, 255, 96, 0.5);
     display: inline-block;
     border: 1px solid black;
     height: 50px;
@@ -34,7 +36,7 @@ h1{
     box-sizing: border-box;
     width: 60px;
     height: 90px;
-    margin: auto;
+    margin: 3px;
     font-weight: 600;
 }
 
