@@ -2,12 +2,12 @@
 
 resultShown = false;
 
-function show(text){
+function show(element){
     if (resultShown){
         resultShown = false;
         delAll()
     }
-    document.getElementById('result').innerHTML += text;
+    document.getElementById('result').innerHTML += element.textContent;
 }
 
 function delAll(){
