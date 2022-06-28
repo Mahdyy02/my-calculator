@@ -1,0 +1,75 @@
+/* Styling my calcultaor */
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.calculator{
+    width: max-content;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: 10px auto;
+    
+}
+
+.display-screen{
+    background-color: rgba(0, 0, 0, .2);
+    display: inline-block;
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+    margin: 10px auto;
+    overflow: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.colm, .operator{
+    box-sizing: border-box;
+    width: 60px;
+    height: 90px;
+    margin: auto;
+    font-weight: 600;
+}
+
+i{
+    color: rgb(255, 59, 59);
+}
+
+footer{
+    position: absolute;
+    margin-top: 20px;
+    bottom: 1px;
+    right: 38%;
+    left: 38%;
+}
+
+footer p{
+    text-align: center;
+    letter-spacing: .5vh;
+}
+
+@media(max-width: 700px) {
+    .colm, .operator{
+        box-sizing: border-box;
+        width: 10vh;
+        height: 15vh;
+        margin: auto;
+        font-weight: 600;
+    }
+
+    footer{
+        position: static;
+        margin-top: 50px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+}

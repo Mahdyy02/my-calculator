@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <script src="https://kit.fontawesome.com/24e138188f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <h1>Online Calculator: </h1>
+        <section class="calculator">
+
+            <div class="row">
+                <div class="display-screen">
+                    <output id="result"></output>
+                </div>
+            </div>
+
+            <div class="row">
+                <button class="colm" type="button" onclick="show('1')">1</button>
+                <button class="colm" type="button" onclick="show('2')">2</button>
+                <button class="colm" type="button" onclick="show('3')">3</button>
+                <button class="colm" type="button" onclick="show('+')">+</button>
+                <button class="colm" type="button" onclick="delAll()">Clear</button>
+            </div>
+
+            <div class="row">
+                <button class="colm" type="button" onclick="show('4')">4</button> 
+                <button class="colm" type="button" onclick="show('5')">5</button>
+                <button class="colm" type="button" onclick="show('6')">6</button>
+                <button class="colm" type="button" onclick="show('-')">-</button>
+                <button class="colm" type="button" onclick="del()">Del</button>
+            </div>
+
+            <div class="row">
+                <button class="colm" type="button" onclick="show('7')">7</button>
+                <button class="colm" type="button" onclick="show('8')">8</button>
+                <button class="colm" type="button" onclick="show('9')">9</button>
+                <button class="colm" type="button" onclick="show('x')">x</button>
+                <button class="colm" type="button" onclick="show('%')">%</button>
+            </div>
+
+            <div class="row">
+                <button class="colm" type="button" onclick="show('(')">(</button>
+                <button class="colm" type="button" onclick="show('0')">0</button>
+                <button class="colm" type="button" onclick="show(')')">)</button>
+                <button class="colm" type="button" onclick="show('/')">/</button>
+                <button class="colm" type="button" onclick="result(); resultShown = true">=</button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Mohamed Mahdi</p>
+        </footer>
+    </body>
+</html>
