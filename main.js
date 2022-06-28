@@ -25,8 +25,14 @@ function del(){
 
 function result(){
     var input = document.getElementById('result').innerHTML;
-    input = input.replace("x", "*")
-    input = input.replace("%", "/100")
+
+    while (input.indexOf("x") != -1 || input.indexOf("%") != -1){
+        input = input.replace("x", "*")
+        input = input.replace("%", "/100")
+    }    
+
+    // console.log("#Debug: "+input)
+
     try {
         document.getElementById('result').innerHTML = eval(input);
     } 
