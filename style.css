@@ -44,6 +44,10 @@ i{
     color: rgb(255, 59, 59);
 }
 
+#result{
+    margin: 1px;
+}
+
 footer{
     position: absolute;
     margin-top: 20px;
